@@ -1,8 +1,9 @@
-const todosNode = document.querySelector('.js-todos');
+const todosNode = document.querySelector('.js-todos'); //Подключаем html свойство в js
 const inputNode = document.querySelector('.js-input');
 const btnNode = document.querySelector('.js-btn');
-let todos = [];
+let todos = []; //Создаём массив дел
 
+//Создаём функциюю добавления дел с переменной todo, которая имеет текст, стасус выполненно или нет и случайный id. После чего добавляем её в массив todos
 function addTodo(text) {
     const todo = {
         text,
@@ -11,7 +12,7 @@ function addTodo(text) {
     };
     todos.push(todo);
 }
-
+//Создаём функцию для удаления дел. Метод forEach перебирает каждый элемент в массиве todos. Когда он находит в массиве элемент с таким же id, то меняет статус на выполнено
 function deleteTodos(id) {
     todos.forEach(todo => {
         if (todo.id === id) {
@@ -19,7 +20,7 @@ function deleteTodos(id) {
         }
     })
 }
-
+//создаём функцию для вывода дел.  С помощью forEach проходим по массиву и если todo имеет статус выполненно, то не выводим её. В html добаляем текст и кнопку сделано.
 function render() {
     console.log(todos);
     let html = '';
@@ -35,7 +36,7 @@ function render() {
             </div>
         `;
     })
-    todosNode.innerHTML = html;
+    todosNode.innerHTML = html; // позволяет менять содержимое в html 
 }
 
 btnNode.addEventListener('click', () => {
