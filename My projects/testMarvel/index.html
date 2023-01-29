@@ -11,13 +11,36 @@
     <header>
         <h1>Список героев</h1>
     </header>
-    <main>
-        <div class="daredevil-container">
-            <img class="daredevil-img" src="images/daredevil1.jpg" alt="daredevil">
-        </div>
-        <div class="daredevil-link-container">
-            <a href="daredevil.html" class="daredevil-link">Сорвиголова</a>
-        </div>
+    <main> 
+        <section class="all-personage">
+            <div class="daredevil-container">
+                <img class="daredevil-img" src="images/Daredevil1.png" alt="daredevil">
+                <div class="daredevil-link">
+                    <a href="daredevil.html">Сорвиголова</a>
+                </div>
+            </div>
+            <div class="elektra-container">
+                <img class="elektra-img" src="images/Elektra1.png" alt="elektra">
+                <div class="elektra-link">
+                    <a href="elektra.html">Электра</a>
+                </div>
+            </div>
+        </section>
+        <section class="character-selection">
+            <label for="character">Выберите двух персонажей</label>
+				<select name="character-first" id="character-first">
+                    <option value="daredevil">Сорвиголова</option>
+                    <option value="elektra">Электра</option>
+                </select>
+				<select name="character-second" id="character-second">
+                    <option value="daredevil">Сорвиголова</option>
+                    <option value="elektra">Электра</option>
+                </select>
+        </section>
+        <section class="characteristics">
+            <p class="char"></p>
+        </section>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>

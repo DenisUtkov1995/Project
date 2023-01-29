@@ -18,31 +18,53 @@ ol, ul {
 } 
 
 body {
-    background-color: black;
+    background-color: white;
 }
+
 
 h1 {
     color: red;
     text-align: center;
 }
 
-.daredevil-container {
+label {
+    color: white;
+}
+
+.all-personage {
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    text-align: center;
+}
+
+.daredevil-container {
+    display: inline-block;
+    height: 450px;
+    margin-left: 70px;
 }
 
 .daredevil-img {
-    display: flex;
     width: 300px;
     height: 400px;
 }
 
-.daredevil-link-container {
-    display: flex;
-    width: 100px;
-    height: 30px;
-    margin-left: 100px;
-    
+
+.daredevil-link {
+    text-align: center;
+}
+
+.elektra-container {
+    display: inline-block;
+    margin-left: 70px;
+}
+
+.elektra-img {
+    width: 300px;
+    height: 400px;
+}
+
+.elektra-link {
+    text-align: center;
+}
+
+.character-selection {
+    display: block;
 }
