@@ -1,15 +1,17 @@
 const selectFirst = document.querySelector(".charter-first")
 const selectSecond = document.querySelector(".charter-second")
 const characterNode = document.querySelector(".characteristics")
+const testNode = document.querySelector(".test");
+let firstFighterNode = document.querySelector(".first-fighter")
 
 const allPersonage = {
-    personage: {
         daredevil: {
             name: 'Daredevil',
             strenge: 3,
             agility:6,
             protaction: 3,
-            stamina: 15
+            stamina: 15,
+            done: true
         },
         elektra: {
             name: 'Elektra',
@@ -18,34 +20,70 @@ const allPersonage = {
             protaction: 1,
             stamina: 13
         }
-    }
 }
 
+
+
+
+
 const daredevil = [];
-daredevil.push(allPersonage.personage.daredevil.strenge);
-daredevil.push(allPersonage.personage.daredevil.agility);
-daredevil.push(allPersonage.personage.daredevil.protaction);
-daredevil.push(allPersonage.personage.daredevil.stamina);
-console.log(daredevil);
+daredevil.push(allPersonage.daredevil.strenge);
+daredevil.push(allPersonage.daredevil.agility);
+daredevil.push(allPersonage.daredevil.protaction);
+daredevil.push(allPersonage.daredevil.stamina);
+daredevil.push(allPersonage.daredevil.done);
+//console.log(daredevil);
+
+
+firstFighterNode = allPersonage.daredevil;
+
+//console.log(firstFighterNode);
+
+if(firstFighterNode === 'Daredevil') {
+    console.log(daredevil)
+}
+
+
+
+function render() {
+    console.log(daredevil)
+    let html ='';
+
+    daredevil.forEach(firstFighterNode => {
+        if(firstFighterNode.done) {
+            return;
+        }
+        html += `
+            <div>
+                ${daredevil}
+            </div>    
+        `;
+    })
+    testNode.innerHTML = html;
+}
+
+render();
+
+
 
 const elektra = [];
-elektra.push(allPersonage.personage.elektra.strenge);
-elektra.push(allPersonage.personage.elektra.agility);
-elektra.push(allPersonage.personage.elektra.protaction);
-elektra.push(allPersonage.personage.elektra.stamina);
-console.log(elektra);
+elektra.push(allPersonage.elektra.strenge);
+elektra.push(allPersonage.elektra.agility);
+elektra.push(allPersonage.elektra.protaction);
+elektra.push(allPersonage.elektra.stamina);
+//console.log(elektra);
 
-let firstHealth = allPersonage.personage.daredevil.stamina;
-let secondHealth = allPersonage.personage.elektra.stamina;
+let firstHealth = allPersonage.daredevil.stamina;
+let secondHealth = allPersonage.elektra.stamina;
 
-const firstDamage = allPersonage.personage.daredevil.strenge;
-const secondDamage = allPersonage.personage.elektra.strenge;
+const firstDamage = allPersonage.daredevil.strenge;
+const secondDamage = allPersonage.elektra.strenge;
 
-const firstMove = allPersonage.personage.daredevil.agility;
-const secondMove = allPersonage.personage.elektra.agility;
+const firstMove = allPersonage.daredevil.agility;
+const secondMove = allPersonage.elektra.agility;
 
-const firstProt = allPersonage.personage.daredevil.protaction;
-const secondProt = allPersonage.personage.elektra.protaction;
+const firstProt = allPersonage.daredevil.protaction;
+const secondProt = allPersonage.elektra.protaction;
 
 
 function fight (agil1, agil2) {
@@ -60,7 +98,7 @@ function fight (agil1, agil2) {
     }
 }
 
-console.log(fight(firstMove, secondMove));
+//console.log(fight(firstMove, secondMove));
 
 
 
