@@ -1,0 +1,70 @@
+html {
+    box-sizing: border-box; 
+    font-size: 16px; 
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+} 
+
+body {
+    background-color: white;
+}
+
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+label {
+    color: white;
+}
+
+.all-personage {
+    display: flex;
+}
+
+.daredevil-container {
+    display: inline-block;
+    height: 450px;
+    margin-left: 70px;
+}
+
+.daredevil-img {
+    width: 300px;
+    height: 400px;
+}
+
+
+.daredevil-link {
+    text-align: center;
+}
+
+.elektra-container {
+    display: inline-block;
+    margin-left: 70px;
+}
+
+.elektra-img {
+    width: 300px;
+    height: 400px;
+}
+
+.elektra-link {
+    text-align: center;
+}
+
+.character-selection {
+    display: block;
+}
