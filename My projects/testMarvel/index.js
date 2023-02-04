@@ -11,7 +11,6 @@ const allPersonage = {
             agility:6,
             protaction: 3,
             stamina: 15,
-            done: true
         },
         elektra: {
             name: 'Elektra',
@@ -22,28 +21,45 @@ const allPersonage = {
         }
 }
 
-
-
-
-
 const daredevil = [];
 daredevil.push(allPersonage.daredevil.strenge);
 daredevil.push(allPersonage.daredevil.agility);
 daredevil.push(allPersonage.daredevil.protaction);
 daredevil.push(allPersonage.daredevil.stamina);
-daredevil.push(allPersonage.daredevil.done);
-//console.log(daredevil);
+
+const elektra = [];
+elektra.push(allPersonage.elektra.strenge);
+elektra.push(allPersonage.elektra.agility);
+elektra.push(allPersonage.elektra.protaction);
+elektra.push(allPersonage.elektra.stamina);
+
+function getSelectValue(e){
+    let selectedValue = e.target.value;
+    let html = '';
+    switch(selectedValue) {
+      case 'Daredevil':
+        html += `
+            <div>
+                ${daredevil}
+            </div>    
+        `;
+        break;
+      case 'Elektra':
+        console.log(elektra);
+        break;
+    }
+  }
+  firstFighterNode.addEventListener('change', function(e) {  
+    getSelectValue(e)
+  });
+  
+  
 
 
-firstFighterNode = allPersonage.daredevil;
-
-//console.log(firstFighterNode);
-
-if(firstFighterNode === 'Daredevil') {
-    console.log(daredevil)
-}
 
 
+
+/*
 
 function render() {
     console.log(daredevil)
@@ -63,15 +79,6 @@ function render() {
 }
 
 render();
-
-
-
-const elektra = [];
-elektra.push(allPersonage.elektra.strenge);
-elektra.push(allPersonage.elektra.agility);
-elektra.push(allPersonage.elektra.protaction);
-elektra.push(allPersonage.elektra.stamina);
-//console.log(elektra);
 
 let firstHealth = allPersonage.daredevil.stamina;
 let secondHealth = allPersonage.elektra.stamina;
@@ -99,15 +106,7 @@ function fight (agil1, agil2) {
 }
 
 //console.log(fight(firstMove, secondMove));
-
-
-
-
-
-
-
-
-/* 
+ 
 function choice(text) {
     switch (text) {
         case "Daredevil": 
