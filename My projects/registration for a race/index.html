@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+</head>
+<body>
+    <h1>Зарегистрируйтесь, чтобы узнать сой номер</h1>
+    <form action="check.html">
+        <section class="css-input-name">
+            <label for="username">Ваше имя</label>
+            <input type="text" name="name" id="username" class="js-input-name" required minlength="3" maxlength="12" pattern="[A-Za-zА-Яа-яЁё]+">
+        </section>
+        <hr>
+        <section class="css-input-age">
+            <label for="userage">Ваш возраст</label>
+            <input type="number" name="age" id="userage" class="js-input-age" required min="8" max="60"> 
+        </section>
+        <hr>
+        <section class="css-input-date">
+            <label for="regdate">Дата регистрации</label>
+            <input type="number" name="date" id="regdate" class="js-input-date" required min="1" max="31">
+        </section>
+        <hr>
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>

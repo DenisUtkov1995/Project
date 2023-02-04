@@ -18,7 +18,7 @@ ol, ul {
 } 
 
 body {
-    background-color: white;
+    background-color: black;
 }
 
 
@@ -28,7 +28,7 @@ h1 {
 }
 
 label {
-    color: black;
+    color: white;
 }
 
 .all-personage {
@@ -67,4 +67,8 @@ label {
 
 .character-selection {
     display: block;
+}
+
+.screen {
+    color: white;
 }

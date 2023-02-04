@@ -4,7 +4,6 @@ const characterNode = document.querySelector(".characteristics")
 const testNode = document.querySelector(".test");
 let firstFighterNode = document.querySelector(".first-fighter")
 
-
 const allPersonage = {
         daredevil: {
             name: 'Daredevil',
@@ -22,7 +21,6 @@ const allPersonage = {
         }
 }
 
-
 const daredevil = [];
 daredevil.push(allPersonage.daredevil.strenge);
 daredevil.push(allPersonage.daredevil.agility);
@@ -35,34 +33,31 @@ elektra.push(allPersonage.elektra.agility);
 elektra.push(allPersonage.elektra.protaction);
 elektra.push(allPersonage.elektra.stamina);
 
-
 function getSelectValue(e){
     let selectedValue = e.target.value;
     let html = '';
-
     switch(selectedValue) {
-        case 'daredevil':
-            html += `
-                <div>
-                    ${daredevil}
-                </div>    
-            `;
-            testNode.innerHTML = html;
-            break;
-        case 'elektra':
-            html += `
-                <div>
-                    ${elektra}
-                </div>    
-            `;
-            testNode.innerHTML = html;
-            break;
-    } 
-}
-  
-firstFighterNode.addEventListener('change', function(e) {  
+      case 'Daredevil':
+        html += `
+            <div>
+                ${daredevil}
+            </div>    
+        `;
+        break;
+      case 'Elektra':
+        console.log(elektra);
+        break;
+    }
+  }
+  firstFighterNode.addEventListener('change', function(e) {  
     getSelectValue(e)
-});
+  });
+  
+  
+
+
+
+
 
 /*
 
@@ -84,9 +79,6 @@ function render() {
 }
 
 render();
-*/
-
-
 
 let firstHealth = allPersonage.daredevil.stamina;
 let secondHealth = allPersonage.elektra.stamina;
@@ -114,15 +106,7 @@ function fight (agil1, agil2) {
 }
 
 //console.log(fight(firstMove, secondMove));
-
-
-
-
-
-
-
-
-/* 
+ 
 function choice(text) {
     switch (text) {
         case "Daredevil": 
