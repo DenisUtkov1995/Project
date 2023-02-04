@@ -2,10 +2,9 @@ const buttonNode = document.querySelector(".btn-js");
 const buttonTwoNode = document.querySelector(".btn-js-two");
 const buttonThreeNode = document.querySelector(".btn-js-three");
 const boxNode = document.querySelector(".box");
-
+const inputNode = document.querySelector(".input-js");
 
 buttonNode.addEventListener("dblclick", changeColor); // добавляет события на кнопку: при клике вызывается функция
-buttonTwoNode.addEventListener("click", changeColor);
 
 function changeColor() {
     let clicked = this;
@@ -24,7 +23,30 @@ buttonThreeNode.addEventListener('keydown', (event) => {
 }
 )
 
+buttonTwoNode.addEventListener("keydown", (event) => {
+    const keyName = event.key;
+    console.log(keyName)
+    if (keyName == 'w'){
+    
+    boxNode.style.backgroundColor = "blue";
+};
+}
+);
 
+
+inputNode.addEventListener("keydown", (event) => {
+    const keyName = event.key;
+    if (keyName == 'w'){
+        boxNode.style.backgroundColor = "blue";
+    }else if (keyName == '1'){
+        boxNode.style.backgroundColor = "white";
+    }else if (keyName == 'r'){
+        boxNode.style.backgroundColor = "red";
+    }else if (keyName == 't'){
+        boxNode.style.backgroundColor = "green";
+    }       
+}
+);
 
 
 

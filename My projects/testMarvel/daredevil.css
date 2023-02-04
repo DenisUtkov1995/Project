@@ -1,0 +1,58 @@
+html {
+    box-sizing: border-box; 
+    font-size: 16px; 
+}
+  
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+} 
+
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 50px;
+}
+
+h2, p, li, ul {
+    color: white;
+}
+
+
+body {
+    background-color: black;
+}
+
+main {
+    display: inline-flex;
+}
+
+.daredevil-img {
+    width: 700px;
+    height: 800px;
+}
+
+.daredevil-icon {
+    width: 700px;
+    height: 800px;
+    
+}
+
+.char {
+    margin-left: 50px;
+}
+
+.back {
+    display: block;
+    margin-top: 10px;
+    margin-left: 325px;
+}
