@@ -8,7 +8,6 @@
 </head>
 <body>
     <h1>Зарегистрируйтесь, чтобы узнать сой номер</h1>
-    <form action="check.html">
         <section class="css-input-name">
             <label for="username">Ваше имя</label>
             <input type="text" name="name" id="username" class="js-input-name" required minlength="3" maxlength="12" pattern="[A-Za-zА-Яа-яЁё]+">
@@ -16,7 +15,7 @@
         <hr>
         <section class="css-input-age">
             <label for="userage">Ваш возраст</label>
-            <input type="number" name="age" id="userage" class="js-input-age" required min="8" max="60"> 
+            <input type="number" name="age" id="userage" class="js-input-age"> 
         </section>
         <hr>
         <section class="css-input-date">
@@ -24,7 +23,9 @@
             <input type="number" name="date" id="regdate" class="js-input-date" required min="1" max="31">
         </section>
         <hr>
-        <input type="submit" value="Отправить">
-    </form>
+        <button class="btn-js">Отправить</button>
+        <div class="output-js"></div>
+        <script src="index.js"></script>
+        <script src="script.js"></script>
 </body>
 </html>
