@@ -1,0 +1,78 @@
+html {
+    box-sizing: border-box; /* Ширина блока с полями */
+    font-size: 16px; /* Размер шрифта */
+}
+  
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+} 
+
+body {
+    display: flex;
+    background: url(images/reg_background.jpg);
+    background-size: 2000px 1000px;
+}
+
+.container {
+    margin-left: 40%;
+    margin-top: 250px;   
+}
+
+h1 {
+    margin-left: -50px;
+}
+
+.css-input-name {
+    margin-left: 100px;
+}
+
+.input-container {
+    margin-top: 40px;
+}
+
+.css-input-age {
+    margin-top: 20px;
+    margin-left: 103px;
+}
+
+.css-input-date {
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.css-btn {
+    margin-top: 250px;
+    margin-left: 205px;
+}
+
+.output-js {
+    margin-top: -200px;
+    margin-left: 100px;
+    font-size: 30px;
+}
+
+#username {
+    width: 150px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+#userage {
+    width: 150px;
+    height: 20px;
+}
+
+#regdate {
+    width: 116px;
+    height: 20px;
+}

@@ -43,16 +43,3 @@ btnNode.addEventListener ('click', function() {
     outputNode.innerHTML = html;
 }); 
 
-/*
-function firstRunners() {
-    let output = Number(dateInputNode.value);
-    let done = true;
-    if(output <= 15) {
-        return done;
-    } else {
-        done = false;
-        return done;
-    }
-}
-firstRunners();
-*/
