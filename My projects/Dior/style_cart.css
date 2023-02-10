@@ -1,0 +1,65 @@
+html {
+    box-sizing: border-box; /* Ширина блока с полями */
+    font-size: 16px; /* Размер шрифта */
+}
+  
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+body {
+    background-color: beige;
+}
+
+.title_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border-bottom: 1px solid;
+}
+
+
+.cart_container {
+    display: flex;
+    gap: 1em;
+}
+
+.product_img {
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border: 1px solid;
+}
+
+.product_information {
+    display: flex;
+}
+.btn_slot {
+    display: flex;
+    gap: 1em;
+    margin-left: 40%;
+}
+
+.first_slot {
+    order: 1;
+}
+
+.second_slot {
+    order: 2;
+}
+
+.quan_product {
+    margin-left: 20%;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="style_cart.css">
+</head>
+<body>
+    <header class="title_container">
+        <div class="title_name">
+            <h1 class="title">Корзина товаров</h1>
+        </div>
+        <div class="link_container">
+            <a href="index.html">Назад</a>
+        </div>
+        
+    </header>
+    <main>
+        <div class="cart_container">
+            <div class="first_slot">
+                <img  class= "product_img" src="images/miss_dior_cart.png" alt="miss_dior">
+                <div class="product_information">
+                    <div class="btn_slot">
+                        <button class="btn_plus" data-id="first_product">+</button>
+                        <button class="btn_minus" data-id="first_product">-</button>
+                    </div>
+                    <div class="quan_product">
+                        <p class="first_number" data-id="first_product"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="second_slot">
+                <img class="product_img" src="images/savage_cart.png" alt="savage">    
+                <div class="product_information">
+                    <div class="btn_slot">
+                        <button class="btn_plus" data-id="second_product">+</button>
+                        <button class="btn_minus" data-id="second_product">-</button>
+                    </div>
+                    <div class="quan_product">
+                        <p class="second_number" data-id="second_product">1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="cart.js"></script>
+    
+</body>
+</html>

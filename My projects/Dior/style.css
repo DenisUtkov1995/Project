@@ -94,3 +94,7 @@ a:hover {
     border-radius: 24px;
     font-size: 20px;
 }
+
+.link_cart_container {
+    text-align: end;
+}
