@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Indie+Flower&family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
     <title>Главная | DIOR</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="import" href="cart.html">
 </head>
 <body>
     <header class="header-container">
@@ -28,21 +29,20 @@
         </div>
     </header>
     <main>
-        <div class="img-miss_dior">
-            <a href="/"><img src="images/miss_dior.webp" alt="miss_dior"></a>
-        </div>
-        <div class="image-module">
-            <div class="class-pictures">
-                <p>АРОМАТЫ</p>
+        <div class="card mb-1" data-id="01">
+            <a href="/"><img class="product-img" src="images/miss_dior.webp" alt="miss_dior"></a>
+            <div class="image-module">
+                <div class="class-pictures">
+                    <p>АРОМАТЫ</p>
+                </div>
+                <span class="item-title">MISS DIOR</span>
+                 <div class="buy-miss_dior">
+                    <button class="btn-miss_dior" data-cart type="button">Купить</button>
+                 </div>
             </div>
-            <div class="name-pictures">
-                <span>MISS DIOR</span>
-            </div>
-             <div class="buy-miss_dior">
-                <button class="btn-miss_dior">Купить</button>
-             </div>
         </div>
-        
     </main>
+    <script src="counter-02.js"></script>
+    <script src="cart-01.js"></script>
 </body>
 </html>

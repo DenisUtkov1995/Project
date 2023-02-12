@@ -34,6 +34,10 @@ body {
     gap: 1em;
 }
 
+.cart-item_title {
+    margin-left: 35%;
+}
+
 .product_img {
     margin-left: 20px;
     margin-top: 20px;
@@ -43,23 +47,11 @@ body {
     border: 1px solid;
 }
 
-.product_information {
-    display: flex;
-}
-.btn_slot {
+.counter-wrapper {
     display: flex;
     gap: 1em;
-    margin-left: 40%;
+    margin-left: 35%;
 }
 
-.first_slot {
-    order: 1;
-}
 
-.second_slot {
-    order: 2;
-}
 
-.quan_product {
-    margin-left: 20%;
-}

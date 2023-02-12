@@ -62,7 +62,7 @@ a:hover {
     text-decoration: underline;
 }
 
-.img-miss_dior {
+.product-img {
     margin-top: 100px;
     margin-left: 12%;
 
@@ -77,7 +77,7 @@ a:hover {
     font-size: 15px;
 }
 
-.name-pictures {
+.item-title {
     margin-top: 10px;
     font-size: 30px;
 }
