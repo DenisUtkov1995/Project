@@ -1,0 +1,88 @@
+.page {
+    margin: 0;
+}
+
+    .head_part {
+        display: inline-flex;
+        border: 1px solid;
+        width: 99vw;
+        height: 10vh;
+    }
+
+        .title_name {
+            order: 2;
+            border: 1px solid;
+            width: 90vw;
+            height: 10vh;
+        }
+
+            .website_name {
+                text-align: center;
+                font-size: 3vw;
+                margin: 0;
+            }
+
+        .title_link {
+            order: 1;
+            border: 1px solid;
+            width: 10vw;
+            height: 10vh;
+        }
+
+            .website_link {
+                text-align: center;
+                font-size: 1vw;
+            }
+
+    .main_part {
+        display: flex;
+        border: 1px solid;
+        flex-direction: row;  
+    }
+
+        .product_container {
+            border: 1px solid;
+            width: 80vw;
+            height: fit-content;
+        }
+
+            .card {
+                border: 1px solid;
+                width: 80vw;
+                height: fit-content;
+            }
+                .img-miss_dior {
+                    width: 50vw;
+                    height: 50vh;
+                    margin-left: 20%;
+                    margin-top: 5%;
+                }    
+
+                .info-miss_dior {
+                    border: 1px solid;
+                    width: fit-content;
+                    height: fit-content;
+                    margin-left: 20%;
+                    
+                }
+
+                .img-sauvage {
+                    width: 30vw;
+                    height: 70vh;
+                    margin-left: 30%;
+                    margin-top: 5%;
+                }
+
+                .info-sauvage {
+                    border: 1px solid;
+                    width: fit-content;
+                    height: fit-content;
+                    margin-left: 30%;
+                }
+
+        .cart_container {
+            border: 1px solid;
+            width: 20vw;
+            height: fit-content;
+        }
+

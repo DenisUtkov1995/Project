@@ -15,14 +15,14 @@ window.addEventListener('click', function (event) {
         };
         //собранные данные подставим в шаблон для товара в корзине
         const cartItemHTML = `<div class="cart-item" data-id="01">
-        <img  class= "product_img" src="images/miss_dior_cart.png" alt="miss_dior">
-        <div class="cart-item_title">${productInfo.title}</div>
+        <img  class= "product_img_cart" src="${productInfo.imgSrc}" alt="">
+        <div class="cart-item_title">Miss DIOR</div>
         <div class="items counter-wrapper">
             <button class="items_control" data-action="minus">-</button>
             <p class="items_current" data-counter>1</p>
             <button class="items_control" data-action="plus">+</button> 
         </div>
-    </div>`;
+        </div>`;
         //отобразим товар в корзине
         //метод insertAdjacentHTML позволяет вставлять кусок html разметки внутрь элемента
         //он принимает два аргумента 1- куда именно хотим добавить элемент, 2- сам html код

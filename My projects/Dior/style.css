@@ -22,8 +22,8 @@ body {
 }
 
 .header-container {
-    height: 50px;
-    width: 100%;
+    height: 5vh;
+    width: 100vw;
     border-bottom: 1px solid;
 }
 
@@ -62,9 +62,30 @@ a:hover {
     text-decoration: underline;
 }
 
-.product-img {
+
+.product_display {
+    display: flex;
+    width: 80vw;
+    height: 100%;
+    border-right: 1px solid;
+    margin-right: 0;
+}
+
+.product-img-miss_dior {
+    width: 70vw;
+    height: 70vh;
     margin-top: 100px;
-    margin-left: 12%;
+    margin-left: 5vw;
+    
+
+}
+
+.product-img-sauvage {
+    width: 50vw;
+    height: 80vh;
+    margin-top: 100px;
+    margin-left: 5vw;
+    
 
 }
 
@@ -82,11 +103,11 @@ a:hover {
     font-size: 30px;
 }
 
-.buy-miss_dior {
+.buy-product {
     margin-top: 10px;
 }
 
-.btn-miss_dior {
+.btn-product {
     color: white;
     background-color: black;
     width: 200px;
@@ -95,6 +116,36 @@ a:hover {
     font-size: 20px;
 }
 
-.link_cart_container {
-    text-align: end;
+.mb-2 {
+    margin-top: 1000px;
+    margin-left: -1300px;
+}
+
+
+.cart_display {
+    width: 15vw;
+    height: 100vh;
+    float: right; 
+    margin-top: -950px;
+}
+
+.product_img_cart {
+    width: 200px;
+    height: 200px;
+}
+
+.cart-item {
+    width: 15vw;
+    height: 25vh;
+    margin-top: 80px;
+}
+
+.counter-wrapper {
+    display: flex;
+    gap: 1em;
+    margin-left: 35%;
+}
+
+.cart-item_title {
+    text-align: center;
 }

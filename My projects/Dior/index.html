@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Indie+Flower&family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
     <title>Главная | DIOR</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="import" href="cart.html">
 </head>
 <body>
     <header class="header-container">
@@ -23,22 +22,55 @@
                     <br>
                     <a href="/">Женские ароматы</a>
                 </div>
-        </div>
-        <div class="link_cart_container">
-            <a class="link_cart" href="cart.html">Корзина</a>
-        </div>
+        </div>     
     </header>
     <main>
-        <div class="card mb-1" data-id="01">
-            <a href="/"><img class="product-img" src="images/miss_dior.webp" alt="miss_dior"></a>
-            <div class="image-module">
-                <div class="class-pictures">
-                    <p>АРОМАТЫ</p>
+        <div class="product_display">
+            <div class="card mb-1" data-id="01">
+                <a href="/"><img class="product-img" src="images/miss_dior.webp" alt="miss_dior"></a>
+                <div class="image-module">
+                    <div class="class-pictures">
+                        <p>АРОМАТЫ</p>
+                    </div>
+                    <span class="item-title">MISS DIOR</span>
+                     <div class="buy-product">
+                        <button class="btn-product" data-cart type="button">Купить</button>
+                     </div>
                 </div>
-                <span class="item-title">MISS DIOR</span>
-                 <div class="buy-miss_dior">
-                    <button class="btn-miss_dior" data-cart type="button">Купить</button>
-                 </div>
+            </div>
+            <div class="card mb-2" data-id="02">
+                <a href="/"><img class="product-img" src="images/Sauvage.png" alt="sauvage"></a>
+                <div class="image-module">
+                    <div class="class-pictures">
+                        <p>АРОМАТЫ</p>
+                    </div>
+                    <span class="item-title">SAUVAGE</span>
+                     <div class="buy-product">
+                        <button class="btn-product" data-cart type="button">Купить</button>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart_display">
+            <div class="cart_container">
+                <div class="cart-item" data-id="01">
+                    <img  class= "product_img_cart" src="images/miss_dior_cart.png" alt="miss_dior">
+                    <div class="cart-item_title">Miss DIOR</div>
+                    <div class="items counter-wrapper">
+                        <button class="items_control" data-action="minus">-</button>
+                        <p class="items_current" data-counter>1</p>
+                        <button class="items_control" data-action="plus">+</button> 
+                    </div>
+                </div>
+                <div class="cart-item" data-id="02">
+                    <img class="product_img_cart" src="images/sauvage_cart.png" alt="sauvage">   
+                    <div class="cart-item_title">Sauvage</div> 
+                    <div class="items counter-wrapper">
+                        <button class="items_control" data-action="minus">-</button>
+                        <p class="items_current" data-counter>1</p>
+                        <button class="items_control"  data-action="plus">+</button>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
