@@ -30,3 +30,6 @@ window.addEventListener('click', function (event) {
         cartWrapper.insertAdjacentHTML('beforeend', cartItemHTML);
     }
 });
+
+
+

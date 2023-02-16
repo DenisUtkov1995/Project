@@ -23,30 +23,31 @@
     <main>
         <div class="main_part">
             <div class="product_container">
-                <div class="card">
-                    <img class="img-miss_dior" src="/My projects/flexbox_website/images/miss_dior.webp" alt="miss_dior">
+                <div class="card" data-id="01">
+                    <img class="img-miss_dior" id="product_img" src="/My projects/flexbox_website/images/miss_dior.webp" alt="/My projects/flexbox_website/images/miss_dior_cart.png">
                     <div class="info-miss_dior">
-                        <p>MISS DIOR</p>
+                        <p class="item-title">MISS DIOR</p>
                         <p>Женские ароматы</p>
-                        <p>8000р</p>
-                        <button>Купить</button>
+                        <p class="price-currency">8000р</p>
+                        <button class="btn-product" data-cart type="button">Купить</button>
                     </div> 
                 </div>
-                <div class="card">
-                    <img class="img-sauvage" src="/My projects/flexbox_website/images/Sauvage.png" alt="Sauvage">
+                <div class="card" data-id="02">
+                    <img class="img-sauvage" id="product_img" src="/My projects/flexbox_website/images/Sauvage.png" alt="/My projects/flexbox_website/images/sauvage_cart.png">
                     <div class="info-sauvage">
-                        <p>SAUVAGE</p>
+                        <p class="item-title">SAUVAGE</p>
                         <p>Мужские ароматы</p>
-                        <p>10000р</p>
-                        <button>Купить</button>
+                        <p class="price-currency">10000р</p>
+                        <button class="btn-product" data-cart type="button">Купить</button>
                     </div>
                 </div>
             </div>
             <div class="cart_container">
-
+                
             </div>
         </div>
     </main>
+    <script src="/My projects/flexbox_website/javascript/cart.js"></script>
     <script src="/My projects/flexbox_website/javascript/counter.js"></script>
 </body>
 </html>
