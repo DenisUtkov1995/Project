@@ -10,5 +10,5 @@ function calcCartPrice() {
         totalPrice += currentPrice;
     })
     // отображаем цену на странице
-    totalPriceEl.innerText = totalPrice;
+    totalPriceEl.innerText = `Итого: ${totalPrice } Р`;
 }
