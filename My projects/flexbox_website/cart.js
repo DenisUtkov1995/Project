@@ -10,7 +10,7 @@ window.addEventListener('click', function(event) {
             price: card.querySelector('.price-currency').innerText
         };
         
-        const cartItemHTML = `<div class="item_cart">
+        const cartItemHTML = `<div class="item_cart" data-id="${productInfo.id}">
         <img class="img-cart" src="${productInfo.imgSrc}" alt="">
         <p class="item-title-cart">${productInfo.title}</p>
         <p class="price-currency-cart">${productInfo.price}</p>

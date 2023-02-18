@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIOR</title>
-    <link rel="stylesheet" href="/My projects/flexbox_website/css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="page">
     <header>
@@ -24,30 +24,49 @@
         <div class="main_part">
             <div class="product_container">
                 <div class="card" data-id="01">
-                    <img class="img-miss_dior" id="product_img" src="/My projects/flexbox_website/images/miss_dior.webp" alt="/My projects/flexbox_website/images/miss_dior_cart.png">
+                    <img class="img-miss_dior" id="product_img" src="images/miss_dior.webp" alt="images/miss_dior_cart.png">
                     <div class="info-miss_dior">
                         <p class="item-title">MISS DIOR</p>
                         <p>Женские ароматы</p>
-                        <p class="price-currency">8000р</p>
+                        <p class="price-currency">8000 Р</p>
+                        <p class="items_current" data-counter>1</p>
                         <button class="btn-product" data-cart type="button">Купить</button>
                     </div> 
                 </div>
                 <div class="card" data-id="02">
-                    <img class="img-sauvage" id="product_img" src="/My projects/flexbox_website/images/Sauvage.png" alt="/My projects/flexbox_website/images/sauvage_cart.png">
+                    <img class="img-sauvage" id="product_img" src="images/Sauvage.png" alt="images/sauvage_cart.png">
                     <div class="info-sauvage">
                         <p class="item-title">SAUVAGE</p>
                         <p>Мужские ароматы</p>
-                        <p class="price-currency">10000р</p>
+                        <p class="price-currency">10000 Р</p>
+                        <p class="items_current" data-counter>1</p>
                         <button class="btn-product" data-cart type="button">Купить</button>
                     </div>
                 </div>
             </div>
-            <div class="cart_container">
-                
+            <div class="cart_wrapper">
+                <div class="cart_container">
+
+                </div>
+                <div  data-cart-empty class="cart_empty">
+                    Корзина пуста
+                </div>
+                <div class="text-total">
+                    Итого:
+                    <div class="total_price none">
+    
+                    </div>
+                </div>
+                <div id="order-form" class="checkout none">
+                    <button>Оформить заказ</button>
+                </div>
             </div>
+           
         </div>
     </main>
-    <script src="/My projects/flexbox_website/javascript/cart.js"></script>
-    <script src="/My projects/flexbox_website/javascript/counter.js"></script>
+    <script src="CalcCartPrice.js"></script>
+    <script src="toggleCartStatus.js"></script>
+    <script src="cart-02.js"></script>
+    <script src="counter.js"></script>
 </body>
 </html>
