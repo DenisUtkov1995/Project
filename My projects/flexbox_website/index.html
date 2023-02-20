@@ -14,9 +14,12 @@
                 <h1 class="website_name">DIOR</h1>
             </div>   
             <div class="title_link">
-                <a href="/">
-                    <p class="website_link">Выбрать аромат</p>
-                </a>   
+                <a href="/" class="website_link">Выбрать аромат </a>   
+                    <div class="dropdown-content">
+                        <a href="/">Мужские ароматы</a>
+                        <br>
+                        <a href="/">Женские ароматы</a>
+                    </div>
             </div>
         </div>
     </header>
@@ -24,22 +27,42 @@
         <div class="main_part">
             <div class="product_container">
                 <div class="card" data-id="01">
-                    <img class="img-miss_dior" id="product_img" src="images/miss_dior.webp" alt="images/miss_dior_cart.png">
-                    <div class="info-miss_dior">
-                        <p class="item-title">MISS DIOR</p>
-                        <p>Женские ароматы</p>
+                    <img class="images" id="product_img" src="images/miss_dior.webp" alt="images/miss_dior_cart.png">
+                    <div class="info-product">
+                        <p class="item-title" id="item-title-miss_dior">MISS DIOR</p>
+                        <p class="subtext">Женские ароматы</p>
                         <p class="price-currency">8000 Р</p>
-                        <p class="items_current" data-counter>1</p>
+                        <p class="items_current none" data-counter>1</p>
                         <button class="btn-product" data-cart type="button">Купить</button>
                     </div> 
                 </div>
                 <div class="card" data-id="02">
-                    <img class="img-sauvage" id="product_img" src="images/Sauvage.png" alt="images/sauvage_cart.png">
-                    <div class="info-sauvage">
-                        <p class="item-title">SAUVAGE</p>
-                        <p>Мужские ароматы</p>
+                    <img class="images" id="product_img" src="images/sauvage.webp" alt="images/sauvage_cart.png">
+                    <div class="info-product">
+                        <p class="item-title" id="item-title-man_dior">SAUVAGE</p>
+                        <p class="subtext">Мужские ароматы</p>
                         <p class="price-currency">10000 Р</p>
-                        <p class="items_current" data-counter>1</p>
+                        <p class="items_current none" data-counter>1</p>
+                        <button class="btn-product" data-cart type="button">Купить</button>
+                    </div>
+                </div>
+                <div class="card" data-id="03">
+                    <img class="images" id="product_img" src="images/dior_addict.webp" alt="images/addict_cart.png">
+                    <div class="info-product">
+                        <p class="item-title" id="item-title-miss_dior">DIOR ADDICT</p>
+                        <p class="subtext">Губная помада</p>
+                        <p class="price-currency">3500 Р</p>
+                        <p class="items_current none" data-counter>1</p>
+                        <button class="btn-product" data-cart type="button">Купить</button>
+                    </div>
+                </div>
+                <div class="card" data-id="04">
+                    <img class="images" id="product_img" src="images/dior_homme.jpg" alt="images/homme_cart.png">
+                    <div class="info-product">
+                        <p class="item-title" id="item-title-man_dior">DIOR HOMME</p>
+                        <p class="subtext">Мужские ароматы</p>
+                        <p class="price-currency">7300 Р</p>
+                        <p class="items_current none" data-counter>1</p>
                         <button class="btn-product" data-cart type="button">Купить</button>
                     </div>
                 </div>
@@ -55,7 +78,7 @@
     
                 </div>
                 <div id="order-form" class="checkout none">
-                    <button>Оформить заказ</button>
+                    <button class="btn-checkout">Оформить заказ</button>
                 </div>
             </div>
            
