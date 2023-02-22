@@ -32,6 +32,7 @@ window.addEventListener('click', function(event) {
     cartWrapper.insertAdjacentHTML('beforeend', cartItemHTML);
         }
     // отображение статуса корзины пустая / полная
+    
     toggleCartStatus();
     // пересчет общей стоимости корзины
     calcCartPrice();

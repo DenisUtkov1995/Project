@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "title": "Miss Dior",
+        "itemsInBox": 1,
+        "weight": 50,
+        "price": 8000,
+        "imgSrc": "miss_dior.webp"
+    },
+    {
+        "id": 2,
+        "title": "Sauvage",
+        "itemsInBox": 1,
+        "weight": 100,
+        "price": 10000,
+        "imgSrc": "Sauvage.webp"
+    
+    },
+    {
+        "id": 3,
+        "title": "Dior Addict",
+        "itemsInBox": 1,
+        "weight": 3.2,
+        "price": 3500,
+        "imgSrc": "dior_addict.webp"
+    },
+    {
+        "id": 4,
+        "title": "Dior Homme",
+        "itemsInBox": 1,
+        "weight": 50,
+        "price": 7300,
+        "imgSrc": "dior_homme.jpg"
+    }
+]
